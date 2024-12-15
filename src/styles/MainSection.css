@@ -1,0 +1,144 @@
+/* General Container Styles */
+.main-container {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+/* Main Section Styles */
+.main-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    background-image: url('../images/phased.png'); /* Ensure the path is correct */
+    background-size: cover; /* Scale the image to cover the section */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    height: calc(400px * 2.0); /* Set the height to 2 times the original */
+}
+
+.content h1 {
+    margin-bottom: 240px; 
+    color: #003399;  
+}
+
+.main-section .content {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    margin: auto;
+    width: 50%;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+    border-radius: 8px; /* Rounded corners for better aesthetics */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.main-section h1 {
+    color: #003399;
+    font-size: medium;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.main-section p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.5;
+}
+
+.main-section .buttons {
+    margin-top: 20px;
+}
+
+.btn-primary {
+    background-color: #483D8B;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #002266;
+}
+
+.btn-secondary {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #1e7e34;
+}
+
+/* Other Sections */
+.other-container {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #003399;
+    margin-bottom: 30px;
+}
+
+.popular-courses-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.popular-course-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.popular-course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.popular-course-image {
+    width: 100%;
+    height: 450px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.popular-course-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #003399;
+    margin-bottom: 10px;
+}
+
+.popular-course-description {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.0;
+}
+
+.popular-course-price {
+    font-size: 1.2rem;
+    color: #28a745;
+    font-weight: bold;
+}

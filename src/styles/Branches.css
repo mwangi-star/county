@@ -1,0 +1,106 @@
+/* General Container Styles */
+.branches-container {
+    font-family: 'Arial, sans-serif';
+    padding: 30px 40px;
+    color: #333;
+    background: linear-gradient(135deg, #e6f7ff, #ffffff);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 900px;
+  }
+  
+  /* Header Styles */
+  .branches-header {
+    text-align: center;
+    color: #0056b3;
+    margin-bottom: 25px;
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .branches-header::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #0056b3;
+    margin: 10px auto;
+    border-radius: 5px;
+  }
+  
+  /* Branch List Styles */
+  .branches-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: stretch;
+  }
+  
+  /* Individual Branch Styles */
+  .branch-item {
+    background: #ffffff;
+    padding: 20px 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .branch-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Branch Name Styles */
+  .branch-name {
+    color: #004080;
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  /* Branch Location Styles */
+  .branch-location {
+    color: #666;
+    margin-bottom: 10px;
+    font-style: italic;
+    font-size: 1rem;
+  }
+  
+  /* Branch Phone Styles */
+  .branch-phones {
+    color: #444;
+    font-size: 1rem;
+  }
+  
+  .branch-phones strong {
+    color: #0056b3;
+    font-weight: bold;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .branches-container {
+      padding: 20px;
+      margin: 10px;
+    }
+  
+    .branches-header {
+      font-size: 2.2rem;
+    }
+  
+    .branch-item {
+      padding: 15px;
+    }
+  
+    .branch-name {
+      font-size: 1.5rem;
+    }
+  
+    .branch-location,
+    .branch-phones {
+      font-size: 0.9rem;
+    }
+  }
+  

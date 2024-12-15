@@ -1,0 +1,96 @@
+/* General Footer Styles */
+.footer-container {
+  background: #AFEEEE;
+  color: #483D8B;
+  padding: 30px 20px;
+  font-family: 'Arial, sans-serif';
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Footer Sections */
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+  text-align: left;
+}
+
+.footer-section h3 {
+  color: #483D8B;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.footer-section p,
+.footer-section ul {
+  font-size: 1rem;
+  color: #483D8B;
+  font-weight: 500;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 5px 0;
+}
+
+.footer-section ul li a {
+  color: #483D8B;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-section ul li a:hover {
+  color: #FFD700;
+}
+
+/* Phone and WhatsApp Icon Styles */
+.footer-section a {
+  color: #483D8B;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-section a:hover {
+  color: #FFD700;
+}
+
+.footer-section svg {
+  margin-right: 8px;
+}
+
+/* Bottom Section */
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  font-size: 0.9rem;
+  color: #483D8B;
+  font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-content {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .footer-section {
+      text-align: center;
+  }
+}
