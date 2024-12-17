@@ -1,17 +1,16 @@
-/* General Footer Styles */
+/* Footer Container */
 .footer-container {
-  background: #AFEEEE;
+  background-color: #AFEEEE;
   color: #483D8B;
-  padding: 30px 20px;
+  padding: 40px 20px;
   font-family: 'Arial, sans-serif';
-  text-align: center;
 }
 
 .footer-content {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 30px;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -20,21 +19,24 @@
 .footer-section {
   flex: 1;
   min-width: 250px;
-  text-align: left;
 }
 
 .footer-section h3 {
+  font-size: 1.4rem;
   color: #483D8B;
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  font-weight: bold;
+  margin-bottom: 15px;
 }
 
-.footer-section p,
-.footer-section ul {
+.footer-section p, 
+.footer-section a {
   font-size: 1rem;
   color: #483D8B;
-  font-weight: 500;
+  margin: 5px 0;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  color: #FFD700;
 }
 
 .footer-section ul {
@@ -43,54 +45,41 @@
 }
 
 .footer-section ul li {
-  margin: 5px 0;
+  margin-bottom: 8px;
 }
 
 .footer-section ul li a {
   color: #483D8B;
-  text-decoration: none;
-  font-weight: 500;
+  transition: color 0.3s;
 }
 
 .footer-section ul li a:hover {
   color: #FFD700;
 }
 
-/* Phone and WhatsApp Icon Styles */
-.footer-section a {
-  color: #483D8B;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.footer-section a:hover {
-  color: #FFD700;
-}
-
-.footer-section svg {
-  margin-right: 8px;
-}
-
-/* Bottom Section */
+/* Footer Bottom */
 .footer-bottom {
   text-align: center;
   margin-top: 20px;
-}
-
-.footer-bottom p {
+  border-top: 1px solid #dcdcdc;
+  padding-top: 15px;
   font-size: 0.9rem;
   color: #483D8B;
-  font-weight: 500;
 }
 
-/* Responsive Design */
+.footer-bottom strong {
+  color: #FFD700;
+}
+
+/* Responsive Styles */
 @media (max-width: 768px) {
   .footer-content {
-      flex-direction: column;
-      align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   .footer-section {
-      text-align: center;
+    text-align: center;
+    margin-bottom: 20px;
   }
 }

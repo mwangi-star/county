@@ -1,7 +1,17 @@
 import React from 'react';
-import { Link } from 'react-router-dom';  // Import Link for client-side routing
-import '../styles/Footer.css';  // Assuming you'll add styles in Footer.css
-import { FaPhoneAlt, FaWhatsapp } from 'react-icons/fa';  // Importing phone and whatsapp icons
+import { Link } from 'react-router-dom'; // Client-side routing
+import '../styles/Footer.css'; // Footer CSS
+import { FaPhoneAlt, FaWhatsapp } from 'react-icons/fa'; // Phone and WhatsApp icons
+
+const branches = [
+  { name: "Head Office", phone: "0721830480", location: "Kimbo, Matangi Tuktuk Stage" },
+  { name: "Githurai Branch", phone: "0727066323" },
+  { name: "Thika Branch", phone: "0784038777" },
+  { name: "Kamakis Branch", phone: "0721830480" },
+  { name: "Murang'a Town Branch", phone: "0727066323" },
+  { name: "Kiganjo Town Branch", phone: "0721830480" },
+  { name: "Gatundu Town Branch", phone: "0721830480" }
+];
 
 const Footer = () => {
   return (
@@ -10,54 +20,49 @@ const Footer = () => {
         {/* Contact Information */}
         <div className="footer-section">
           <h3>Contact Us</h3>
-          <p><strong>Head Office:</strong> Kimbo, Matangi Tuktuk Stage</p>
           <p>
-            <FaPhoneAlt /> <a href="tel:0721830480">0721830480</a> | 
-            <a href="tel:0722224800"> 0722224800</a>
+            <strong>{branches[0].name}:</strong> {branches[0].location}
           </p>
-          <p>
-            <FaPhoneAlt /> <a href="tel:0727066323">0727066323</a> - Githurai Branch
-          </p>
-          <p>
-            <FaPhoneAlt /> <a href="tel:0784038777">0784038777</a> - Thika  Branch
-          </p>
-          <p>
-            <FaPhoneAlt /> <a href="tel:0721830480">0721830480</a> - Kamakis Branch
-          </p>
-          <p>
-            <FaPhoneAlt /> <a href="tel:0727066323">0727066323</a> - Murang'a Town Branch
-          </p>
-          <p>
-            <FaPhoneAlt /> <a href="tel:0721830480">0721830480</a> - Kiganjo town branch
-          </p>
-          <p>
-            <FaPhoneAlt /> <a href="tel:0721830480">0721830480</a> - Gatundu  town branch
-          </p>
+          {branches.map((branch, index) => (
+            index > 0 && (
+              <p key={index}>
+                <FaPhoneAlt /> {branch.name}:{" "}
+                <a href={`tel:${branch.phone}`}>{branch.phone}</a>
+              </p>
+            )
+          ))}
         </div>
 
         {/* Quick Links */}
         <div className="footer-section">
           <h3>Quick Links</h3>
           <ul>
-            <li><Link to="/Home">Home</Link></li>
+            <li><Link to="/">Home</Link></li>
             <li><Link to="/about">About Us</Link></li>
             <li><Link to="/contact">Contact</Link></li>
             <li><Link to="/courses">Courses</Link></li>
           </ul>
         </div>
 
-        {/* Social and WhatsApp */}
+        {/* Follow Us */}
         <div className="footer-section">
           <h3>Follow Us</h3>
           <p>
-            <FaWhatsapp /> <a href="https://wa.me/0784038777" target="_blank" rel="noopener noreferrer">Chat with us on WhatsApp</a>
+            <FaWhatsapp />{" "}
+            <a href="https://wa.me/0784038777" target="_blank" rel="noopener noreferrer">
+              Chat with us on WhatsApp
+            </a>
           </p>
         </div>
+      </div>
 
-        {/* Copyright */}
-        <div className="footer-section footer-bottom">
-          <p>© {new Date().getFullYear()} County Driving School. All rights reserved.Designed by Msambweni web developers</p>
-        </div>
+      {/* Horizontal Line and Copyright */}
+      <hr className="footer-separator" />
+      <div className="footer-bottom">
+        <p>
+          © {new Date().getFullYear()} County Intermediate institute Of Advanced Driving School. All rights reserved. 
+          Designed by <strong>Msambweni Web Developers</strong>
+        </p>
       </div>
     </footer>
   );
