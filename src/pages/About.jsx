@@ -5,15 +5,15 @@ const About = () => {
   return (
     <div className="about-container">
       <div className="about-header">
-        <h1>About County Driving School</h1>
-        <p>Empowering safe and confident drivers since 1990.</p>
+        <h1>About County Intermediate  Driving School</h1>
+        <p>Empowering safe and confident drivers since 2016.</p>
       </div>
       <div className="about-content">
         {/* Left Section */}
         <div className="about-section">
           <h2>Who We Are</h2>
           <p>
-            County Driving School has been at the forefront of driver education for over 30 years. 
+            County Intermediate Driving School has been at the forefront of driver education for over 8 years. 
             Our mission is to ensure every student learns the skills and confidence needed to be a 
             responsible and safe driver. We combine professional instruction with real-world experience 
             to help you achieve your driving goals.
@@ -45,6 +45,10 @@ const About = () => {
         <p>
           At County Driving School, we envision a world where every driver on the road is skilled, 
           responsible, and confident, creating safer roads for everyone.
+        </p>
+        <h2>Our Motto</h2>
+        <p>
+          Smile of our county
         </p>
       </div>
     </div>

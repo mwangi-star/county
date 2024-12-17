@@ -27,6 +27,12 @@ const Footer = () => {
           <p>
             <FaPhoneAlt /> <a href="tel:0727066323">0727066323</a> - Murang'a Town Branch
           </p>
+          <p>
+            <FaPhoneAlt /> <a href="tel:0721830480">0721830480</a> - Kiganjo town branch
+          </p>
+          <p>
+            <FaPhoneAlt /> <a href="tel:0721830480">0721830480</a> - Gatundu  town branch
+          </p>
         </div>
 
         {/* Quick Links */}

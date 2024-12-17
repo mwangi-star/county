@@ -24,6 +24,14 @@ const Branches = () => {
       name: "Murang'a Town Branch",
       phones: [' 0727066323'],
     },
+    {
+      name: "Gatundu Town Branch",
+      phones: [' 0722224800'],
+    },
+    {
+      name: "Kiganjo Town Branch",
+      phones: [' 0722224800'],
+    },
   ];
 
   return (

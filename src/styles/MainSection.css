@@ -12,11 +12,12 @@
     align-items: center;
     text-align: center;
     position: relative;
-    background-image: url('../images/phased.png'); /* Ensure the path is correct */
+    background-image: url('../images/home.jpg'); /* Ensure the path is correct */
     background-size: cover; /* Scale the image to cover the section */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Prevent the image from repeating */
-    height: calc(400px * 2.0); /* Set the height to 2 times the original */
+    height: calc(400px * 1.6); /* Set the height to 2 times the original */
+    
 }
 
 .content h1 {

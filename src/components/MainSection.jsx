@@ -9,14 +9,14 @@ const MainSection = () => {
       id: "b1",
       title: "B1 - Automatic Light Vehicle",
       description: "Learn how to drive an Automatic Light Passenger Car.",
-      price: "12,000",
+      price: "11,500",
       image: require("../images/car2.jpg"), // Replace with actual path
     },
     {
       id: "b2",
       title: "B2 - Manual Light Vehicle",
       description: "Learn how to drive a Manual Light Passenger Car.",
-      price: "11,500",
+      price: "12,000",
       image: require("../images/bue.jpg"), // Replace with actual path
     },
     {
@@ -24,7 +24,7 @@ const MainSection = () => {
       title: "B3 - Executive/Advanced",
       description: "Learn driving as a profession with our advanced courses.",
       price: "9,000",
-      image: require("../images/taxi.webp"), // Replace with actual path
+      image: require("../images/AUTO.webp"), // Replace with actual path
     },
   ];
 

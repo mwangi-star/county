@@ -4,11 +4,11 @@ import "../styles/Courses.css";
 import imagea1 from '../images/piik.webp'
 import imagea2 from '../images/tuk.PNG'
 import imageb1 from '../images/bue.jpg' 
-import imageb2 from '../images/van1.jpg'
+import imageb2 from '../images/car2.jpg'
 import imageb3 from  '../images/taxi.webp'
 import imagec1 from '../images/lori.webp'
 import imagec2 from '../images/lori.webp'
-import imaged1 from '../images/van2.jpg'
+import imaged1 from '../images/car3.jpg'
 import imaged2 from '../images/ndus.webp'
 
 const coursesData = [
@@ -25,7 +25,7 @@ const coursesData = [
   {
     category: "A3 - Tuk Tuk",
     image:imagea2,
-    years: "21 years and above",
+    years: "18 years and above",
     specialClasses: "KES 12,500",
     fullCourse: { cost: "KES 9,000", lessons: 10 },
     halfCourse: { cost: "KES 7,500", lessons: 5 },
@@ -36,8 +36,8 @@ const coursesData = [
     image: imageb1,
     years: "18 years and above",
     specialClasses: "KES 16,000",
-    fullCourse: { cost: "KES 12,000", lessons: 34 },
-    halfCourse: { cost: "KES 9,500", lessons: 20 },
+    fullCourse: { cost: "KES 12,000", lessons: 20 },
+    halfCourse: { cost: "KES 9,500", lessons: 10 },
     testOnly: "KES 7,000",
   },
   {
@@ -45,8 +45,8 @@ const coursesData = [
     image: imageb2,
     years: "18 years and above",
     specialClasses: "KES 15,700",
-    fullCourse: { cost: "KES 11,500", lessons: 34 },
-    halfCourse: { cost: "KES 9,000", lessons: 20 },
+    fullCourse: { cost: "KES 11,500", lessons: 20 },
+    halfCourse: { cost: "KES 9,000", lessons: 10 },
     testOnly: "KES 7,000",
   },
   {
@@ -54,7 +54,7 @@ const coursesData = [
     image: imageb3,
     years: "18 years and above, 3 years experience",
     specialClasses: "KES 15,300",
-    fullCourse: { cost: "KES 9,000", lessons: 30 },
+    fullCourse: { cost: "KES 9,000", lessons: 20 },
     halfCourse: { cost: "KES 8,500", lessons: 10 },
     testOnly: "KES 7,000",
   },
@@ -63,8 +63,8 @@ const coursesData = [
     image: imagec1,
     years: "21 years and above",
     specialClasses: "KES 15,000",
-    fullCourse: { cost: "KES 13,000", lessons: 30 },
-    halfCourse: { cost: "KES 10,000", lessons: 20 },
+    fullCourse: { cost: "KES 13,000", lessons: 20 },
+    halfCourse: { cost: "KES 10,000", lessons: 10 },
     testOnly: "KES 7,000",
   },
   {
@@ -72,8 +72,8 @@ const coursesData = [
     image: imagec2,
     years: "21 years and above",
     specialClasses: "KES 17,000",
-    fullCourse: { cost: "KES 13,500", lessons: 30 },
-    halfCourse: { cost: "KES 10,500", lessons: 20 },
+    fullCourse: { cost: "KES 13,500", lessons: 20 },
+    halfCourse: { cost: "KES 10,500", lessons: 10 },
     testOnly: "KES 7,000",
   },
   /*{
@@ -118,7 +118,7 @@ const coursesData = [
 const Courses = () => {
   return (
     <div className="courses-container">
-      <h1>County Driving School Courses</h1>
+      <h1>County Intermediate Driving School Courses</h1>
       <div className="courses-list">
         {coursesData.map((course, index) => (
           <div key={index} className="course">
