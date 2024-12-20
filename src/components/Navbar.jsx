@@ -20,24 +20,28 @@ const Navbar = () => {
             <img src={logo} alt="Logo" className="logo" />
             <span>County Intermediate Institute of Advanced Driving School</span>
           </div>
+
+          {/* Hamburger Menu */}
           <input type="checkbox" id="menu-toggle" className="menu-toggle" />
           <label htmlFor="menu-toggle" className="menu-icon">
             <span></span>
             <span></span>
             <span></span>
           </label>
+
+          {/* Navigation Links */}
           <ul className="navbar-links">
             <li><Link to="/Home">Home</Link></li>
-            <li><Link to="/courses"> Driving Courses</Link></li>
+            <li><Link to="/courses">Driving Courses</Link></li>
             <li><Link to="/Branches">Branches</Link></li>
             <li><Link to="/Contact">Contact</Link></li>
             <li><Link to="/Cambridge">Computer Courses</Link></li>
             <li><Link to="/About">About Us</Link></li>
           </ul>
-          <Link to='/Cambridge'>
-          <button className="navbar-button">Enroll in Computer Lessons</button>
+
+          <Link to="/Cambridge">
+            <button className="navbar-button">Enroll in Computer Lessons</button>
           </Link>
-          
         </div>
       </nav>
     </>

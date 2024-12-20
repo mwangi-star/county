@@ -33,9 +33,7 @@ const MainSection = () => {
       {/* Welcome Section */}
       <div className="main-section">
         <div className="content">
-          <h1>
-            WELCOME TO COUNTY INTERMEDIATE INSTITUTE OF ADVANCED DRIVING SCHOOL
-          </h1>
+          
           <p>
             We are the Leading Driving Institution that centers its training on
             defensive driving, basic mechanics, first aid, and professional

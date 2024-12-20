@@ -12,11 +12,12 @@
     align-items: center;
     text-align: center;
     position: relative;
-    background-image: url('../images/home.jpg'); /* Ensure the path is correct */
+    background-image: url('../images/hero.PNG'); /* Ensure the path is correct */
     background-size: cover; /* Scale the image to cover the section */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Prevent the image from repeating */
-    height: calc(400px * 1.6); /* Set the height to 2 times the original */
+    height:auto; /* Set the height to 2 times the original */
+    width: 100%;
     
 }
 
@@ -31,6 +32,7 @@
     width: 50%;
     padding: 20px;
     position: relative;
+    margin-top:340px;
     z-index: 1;
     border-radius: 8px; /* Rounded corners for better aesthetics */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
