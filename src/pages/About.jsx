@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div className="about-container">
       <div className="about-header">
-        <h1>About County Intermediate  Driving School</h1>
+        <h1>About County Intermediate Driving School</h1>
         <p>Empowering safe and confident drivers since 2016.</p>
       </div>
       <div className="about-content">
@@ -23,20 +23,24 @@ const About = () => {
         {/* Right Section */}
         <div className="about-section">
           <h2>Why Choose Us?</h2>
-          <ul>
-            <li>100% guaranteed success.</li>
-            <li>Digital enrollment program.</li>
-            <li>Flexible scheduling options to suit your needs.</li>
-            <li>weekend classes.</li>
-            <li>Proven success rates in driver licensing exams.</li>
-            <li>Pick and drop drop.</li>
-            <li>Certicate of merit upon completion.</li>
-            <li>free basic mechanical course.</li>
-             <li>No hidden charges</li>
-             <li>Discounted rates (three quater installment)</li>
-
-
-          </ul>
+          <div className="why-choose-us-cards">
+            {[
+              '100% guaranteed success',
+              'Digital enrollment program',
+              'Flexible scheduling options to suit your needs',
+              'Weekend classes',
+              'Proven success rates in driver licensing exams',
+              'Pick and drop service',
+              'Certificate of merit upon completion',
+              'Free basic mechanical course',
+              'No hidden charges',
+              'Discounted rates (three-quarter installment)',
+            ].map((benefit, index) => (
+              <div className="card" key={index}>
+                <p>{benefit}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
 
@@ -47,12 +51,10 @@ const About = () => {
           responsible, and confident, creating safer roads for everyone.
         </p>
         <h2>Our Motto</h2>
-        <p>
-          Smile of our county
-        </p>
+        <p>Smile of our county</p>
       </div>
     </div>
   );
 };
 
-export default About; 
+export default About;
