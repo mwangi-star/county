@@ -137,6 +137,7 @@ const MainSection = () => {
             <button className="close-button" onClick={closeImageModal}>
               Close
             </button>
+            
           </div>
         </div>
       )}

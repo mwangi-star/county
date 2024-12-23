@@ -11,6 +11,7 @@ const Contact = () => {
   });
 
   const [statusMessage, setStatusMessage] = useState('');
+  const [loading, setLoading] = useState(false); // To handle loading state
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -18,24 +19,28 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setLoading(true);
 
     const serviceID = 'service_0yupfna'; // Replace with your EmailJS Service ID
     const templateID = 'template_jg3egp8'; // Replace with your EmailJS Template ID
     const publicKey = 'DSNKAXMWdQBLC56Do'; // Replace with your EmailJS Public Key
 
-    console.log('Form Data Being Sent:', formData); // Debugging log for form data
+    // Debugging log for form data
+    console.log('Sending form data:', formData);
 
     emailjs
       .send(serviceID, templateID, formData, publicKey)
       .then((response) => {
-        console.log('Email sent successfully!', response.status, response.text);
+        console.log('Email sent successfully:', response.status, response.text);
         setStatusMessage('✅ Message sent successfully!');
-        setTimeout(() => setStatusMessage(''), 5000);
-        setFormData({ user_name: '', user_email: '', message: '' });
+        setLoading(false);
+        setTimeout(() => setStatusMessage(''), 5000); // Clear the status message after 5 seconds
+        setFormData({ user_name: '', user_email: '', message: '' }); // Reset the form
       })
       .catch((error) => {
-        console.error('Email sending failed:', error);
+        console.error('Error sending email:', error);
         setStatusMessage('❌ Failed to send the message. Please try again later.');
+        setLoading(false);
         setTimeout(() => setStatusMessage(''), 5000);
       });
   };
@@ -78,7 +83,7 @@ const Contact = () => {
       {/* WhatsApp Floating Button */}
       <div className="whatsapp-container">
         <a href="https://wa.me/0784038777" target="_blank" rel="noopener noreferrer">
-          <FaWhatsapp className="whatsapp-icon" />
+          <FaWhatsapp className="whatsapp-icon" aria-label="WhatsApp Contact" />
         </a>
       </div>
 
@@ -95,6 +100,7 @@ const Contact = () => {
             value={formData.user_name}
             onChange={handleChange}
             required
+            aria-required="true"
           />
 
           <label htmlFor="user_email">Your Email</label>
@@ -106,6 +112,7 @@ const Contact = () => {
             value={formData.user_email}
             onChange={handleChange}
             required
+            aria-required="true"
           />
 
           <label htmlFor="message">Your Message</label>
@@ -116,9 +123,12 @@ const Contact = () => {
             value={formData.message}
             onChange={handleChange}
             required
+            aria-required="true"
           ></textarea>
 
-          <button type="submit">Send Message</button>
+          <button type="submit" disabled={loading}>
+            {loading ? 'Sending...' : 'Send Message'}
+          </button>
         </form>
         {statusMessage && <p className="status-message">{statusMessage}</p>}
       </div>

@@ -32,7 +32,7 @@ const Navbar = () => {
           {/* Navigation Links */}
           <ul className="navbar-links">
             <li><Link to="/Home">Home</Link></li>
-            <li><Link to="/courses">Driving Courses</Link></li>
+            <li><Link to="/courses"> Courses</Link></li>
             <li><Link to="/Branches">Branches</Link></li>
             <li><Link to="/Contact">Contact</Link></li>
             <li><Link to="/Cambridge">Computer Courses</Link></li>
