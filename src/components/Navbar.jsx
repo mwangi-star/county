@@ -31,13 +31,13 @@ const Navbar = () => {
 
           {/* Navigation Links */}
           <ul className="navbar-links">
-            <li><Link to="/Home">Home</Link></li>
-            <li><Link to="/courses"> Courses</Link></li>
-            <li><Link to="/Branches">Branches</Link></li>
-            <li><Link to="/Contact">Contact</Link></li>
-            <li><Link to="/Cambridge">Computer Courses</Link></li>
-            <li><Link to="/About">About Us</Link></li>
-          </ul>
+  <li><Link to="/home">Home</Link></li>
+  <li><Link to="/courses">Courses</Link></li>
+  <li><Link to="/branches">Branches</Link></li>
+  <li><Link to="/contact">Contact</Link></li>
+  <li><Link to="/cambridge">Computer Courses</Link></li>
+  <li><Link to="/about">About Us</Link></li>
+</ul>
 
           <Link to="/Cambridge">
             <button className="navbar-button">Enroll in Computer Lessons</button>
